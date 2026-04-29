@@ -63,7 +63,7 @@ Key fields include:
 
 ### 1. Loan Default & Overview
 
-![Loan Overview](loan_default_and_overview.png)
+![Loan Overview](./Loan_default_and_overview.png)
 
 - Loan distribution by purpose  
 - Default rate by employment type  
@@ -74,7 +74,7 @@ Key fields include:
 
 ### 2. Applicant Demographics & Financial Profile
 
-![Demographics](Applicant_demographics_and_financial_profile.png)
+![Demographics](./Applicant_Demographics_and_financial_profile.png)
 
 - Loan distribution by credit score  
 - Demographic segmentation  
@@ -84,7 +84,7 @@ Key fields include:
 
 ### 3. Financial Risk Metrics
 
-![Financial Metrics](financial_metrics.png)
+![Financial Metrics](./Financial_Metrics.png)
 
 - Year-over-Year loan change  
 - Default trend analysis  
