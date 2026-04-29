@@ -13,7 +13,7 @@ This project analyzes **250,000+ loan records** to uncover patterns in:
 - Financial risk indicators  
 - Credit behavior  
 
-The goal was to move beyond reporting and answer:
+The goal was to answer:
 
 👉 *What factors contribute to loan default risk, and how can they be identified early?*
 
@@ -21,173 +21,117 @@ The goal was to move beyond reporting and answer:
 
 ## 🛠️ Tech Stack
 
-- **SQL (MS SQL Server)** – Data storage, cleaning, transformation  
-- **Power BI** – Interactive dashboards and business insights  
-- **DAX** – Advanced calculations and metrics  
-- **Power BI Service + Gateway** – Dataflow pipeline integration  
+- SQL (MS SQL Server)  
+- Power BI  
+- DAX  
+- Power BI Service + Gateway  
 
 ---
 
 ## 📂 Dataset
 
-- Source: Kaggle (Loan Dataset)  
+- Source: Kaggle  
 - Size: 250,000+ records  
-- Key fields:
-  - Loan Amount, Income, Credit Score  
-  - Employment Type, Education, Marital Status  
-  - Loan Purpose, Interest Rate, DTI Ratio  
-  - Default Status  
+
+Key fields include:
+- Income, Loan Amount, Credit Score  
+- Employment Type, Education, Marital Status  
+- Interest Rate, DTI Ratio  
+- Default  
 
 ---
 
-## ⚙️ Data Engineering & Preparation
+## ⚙️ Data Preparation
 
-### 1. Data Loading (SQL)
-- Imported raw dataset into SQL Server  
-- Structured data into analyzable format  
-
-### 2. Data Cleaning & Transformation
-- Identified missing values  
-- Replaced nulls using **group-based mean imputation**  
-  *(e.g., different averages for different credit score segments)*  
-
-👉 This ensured more realistic and context-aware data cleaning  
-
-### 3. Data Pipeline
-- Connected SQL Server to Power BI using:
-  - **On-Premises Data Gateway**
-  - **Dataflow Pipeline**
-- Loaded processed data into Power BI  
+- Loaded data into SQL Server  
+- Handled null values using **group-based mean imputation**  
+- Built ETL pipeline using Dataflows  
+- Connected SQL → Power BI via Gateway  
 
 ---
 
-## 🔄 Data Transformation (Power BI)
+## 🔄 Data Transformation
 
-- Performed transformations using Power Query  
-- Created derived columns:
-  - Age Groups  
-  - Credit Score Categories  
+- Created calculated fields:
+  - Age Group  
+  - Credit Score Bins  
   - Income Brackets  
 
 ---
 
-## 📊 Dashboard Overview
+## 📊 Dashboard
 
-The dashboard is divided into **3 analytical layers**:
+### 1. Loan Default & Overview
 
----
-
-### 1️⃣ Loan Default & Overview
-
-
-::contentReference[oaicite:0]{index=0}
-
+![Loan Overview](loan_default_and_overview.png)
 
 - Loan distribution by purpose  
 - Default rate by employment type  
-- Income trends across employment categories  
-- Default trends over time  
-- Loan amount analysis by age group  
+- Income vs employment trends  
+- Default trend over time  
 
 ---
 
-### 2️⃣ Applicant Demographics & Financial Profile
+### 2. Applicant Demographics & Financial Profile
 
+![Demographics](Applicant_demographics_and_financial_profile.png)
 
-::contentReference[oaicite:1]{index=1}
-
-
-- Loan patterns across credit score categories  
-- Demographic segmentation (age, marital status, education)  
-- Loan distribution by income and employment  
-- Credit behavior insights  
+- Loan distribution by credit score  
+- Demographic segmentation  
+- Loan behavior by income & marital status  
 
 ---
 
-### 3️⃣ Financial Risk Metrics
+### 3. Financial Risk Metrics
 
+![Financial Metrics](financial_metrics.png)
 
-::contentReference[oaicite:2]{index=2}
-
-
-- Year-over-Year (YoY) loan amount change  
-- YoY default trends  
-- YTD loan metrics  
-- Risk flow visualization across income and employment  
+- Year-over-Year loan change  
+- Default trend analysis  
+- YTD loan amount  
+- Risk flow visualization  
 
 ---
 
-## 📐 Key DAX Measures
+## 📐 DAX Measures
 
-Implemented advanced DAX calculations for analytical insights.
-
-📄 Full list of measures: :contentReference[oaicite:3]{index=3}  
+Advanced calculations implemented using DAX.
 
 Key examples:
-
 - Default Rate by Employment Type  
-- YoY Loan Amount Change  
+- YoY Loan Change  
 - YoY Default Change  
 - YTD Loan Amount  
-- Median Loan by Credit Category  
 
 ---
 
 ## 📈 Key Insights
 
-- **Unemployed individuals show highest default rates**  
-- Default risk decreases significantly for **full-time employees**  
-- Lower credit score groups show **higher financial risk concentration**  
-- Loan distribution varies strongly by **purpose and income levels**  
-- YoY trends reveal **cyclical changes in default behavior**  
+- Unemployed individuals show highest default rates  
+- Full-time employees have lowest risk  
+- Low credit score segments show higher defaults  
+- Loan purpose and income strongly influence risk  
 
 ---
 
 ## 🎯 Business Impact
 
-- Enables early identification of **high-risk borrowers**  
-- Supports **credit risk assessment and decision-making**  
-- Helps financial institutions optimize **loan approval strategies**  
-- Provides a foundation for **risk modeling and policy design**  
-
----
-
-## 📁 Project Structure
-├── SQL/
-│ └── data_cleaning.sql
-├── dashboards/
-│ ├── Loan_Overview.png
-│ ├── Demographics.png
-│ └── Financial_Metrics.png
-├── dax/
-│ └── measures.docx
-├── data/
-│ └── dataset.csv
-└── README.md
-
-
----
-
-## ⚡ How to Run
-
-1. Load dataset into SQL Server  
-2. Perform cleaning and transformation  
-3. Connect Power BI via Dataflow  
-4. Open Power BI dashboard file  
-5. Explore insights  
+- Identifies high-risk borrowers early  
+- Supports credit decision-making  
+- Enables risk-based segmentation  
+- Improves loan strategy  
 
 ---
 
 ## 💡 Key Learnings
 
-- Importance of **context-aware data cleaning (group-based imputation)**  
-- Translating raw financial data into **risk insights**  
-- Building layered dashboards for **exploration → explanation → decision**  
-- Applying DAX for advanced analytical logic  
+- Context-aware data cleaning  
+- End-to-end analytics pipeline  
+- Business-focused dashboard design  
+- Financial risk interpretation  
 
 ---
 
 ## 🤝 Connect
 
-If you're working in analytics, finance, or strategy — happy to connect and discuss!
-
+Open to opportunities in Data Analytics / Business Analytics / Data Engineering
