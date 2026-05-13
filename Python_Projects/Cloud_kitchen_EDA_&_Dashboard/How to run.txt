@@ -1,0 +1,5 @@
+How to run---
+#make sure to install required packages using [-m pip install -r requirements.txt]
+1) streamlit dashboard: cmd> streamlit run streamlit_dashboard.py
+
+2) plotly_dashboard: cmd>python plotly_dashboard.py
