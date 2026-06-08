@@ -174,7 +174,7 @@ All KPI calculations were validated using Excel Pivot Tables to ensure accuracy.
 
 ## Dashboard 4: Vehicles Overview
 
-![Vehicles Overview](vehicles_Overview.png)
+![Vehicles Overview](vehicles_overview.png)
 
 ### Insights
 
