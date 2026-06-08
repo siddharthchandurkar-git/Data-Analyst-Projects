@@ -1,0 +1,43 @@
+Domain Knowledge
+Table 1: Orders
+
+Order ID:Tells us how many orders exist, identifies unique deliveries, and helps detect duplicates or missing records.
+Actual Delivery Date:Shows when the delivery actually happened; lets us know if shipments are late, on-time, or early.
+Delay Reason:Explains why an order was delayed (e.g., driver issue, vehicle breakdown, hub bottleneck, weather); helps identify operational problems.
+Driver ID / Driver Name:Indicates who delivered the order; lets us analyze driver performance, experience, and contribution to delays.
+Hub Name:Indicates where the order was processed or dispatched; helps identify hub efficiency, bottlenecks, and workload distribution.
+Is Delayed:Simple indicator of whether the delivery was late; gives insight into operational efficiency.
+Is On Time:Simple indicator of whether the delivery met the promised time; insight into SLA adherence and customer experience.
+Order Date:Shows when the order was placed; helps analyze demand trends, seasonal patterns, and order volumes over time.
+Order Status:Tells the current outcome of the order — Delivered, Delayed, Cancelled; provides knowledge about fulfillment success and operational issues.
+Vehicle Name / Vehicle Type:Indicates which vehicle was used and its category; helps understand fleet usage, suitability of vehicle type for orders, and potential cause of delays.
+Customer Satisfaction Score:Captures customer feedback; reflects the perceived quality of delivery, speed, and overall service.
+Delivery Time Hours:Shows how long it took to deliver the order; insight into delivery efficiency and route optimization.
+Hub Processing Time Hours:Indicates how long the hub took to process the order; shows hub efficiency and operational delays before dispatch.
+
+Table 2: Hubs
+
+Hub ID:Unique identifier for each hub. Allows us to link orders to specific hubs, track hub-specific performance, and analyze which hubs are handling more or fewer orders.
+Hub Name:Human-readable name of the hub. Helps identify locations on dashboards, reports, or maps and compare performance between hubs.
+Hub Capacity:Maximum number of orders the hub can process in a given period. Provides insight into hub utilization, potential bottlenecks, and whether a hub is overloaded or underused.
+
+Table 3: Drivers
+
+DriverID:Unique identifier for each driver. Helps link orders to drivers, track individual performance, and prevent duplicate records.
+DriverName:Human-readable name of the driver. Used in dashboards/reports to show individual driver performance, assign tasks, or rank drivers.
+Employment Type:Indicates if the driver is full-time, part-time, or contract. Insight into workforce structure, staffing needs, and operational planning.
+Experience Filter:Usually a derived field to group drivers by experience (e.g., 0–2 yrs, 2–5 yrs, 5+ yrs). Helps analyze performance vs experience, identify skill gaps, and training needs.
+Hire Date:Date the driver joined the company. Knowledge gained includes tenure, workforce age, and allows calculation of experience over time.
+Experience Years:Number of years the driver has been driving. Useful to correlate experience with delivery efficiency, delays, and performance ratings.
+Performance Rating:Metric or score representing driver quality (could be based on delays, customer feedback, or internal assessment). Insight into high/low performers, helps in incentives, training, or allocation.
+
+
+Table 4: Vehicles
+
+
+Purchase Date:Date the vehicle was acquired. Provides insight into vehicle age, depreciation, and planning for replacement or upgrade.
+Vehicle ID / Vehicle Code:Unique identifier for each vehicle. Used to link orders to vehicles, track usage, and prevent duplicates.
+Vehicle Model:Model or make of the vehicle. Helps analyze vehicle performance, reliability by model, and suitability for certain deliveries.
+Vehicle Status:Indicates whether the vehicle is Active, Inactive, or Under Maintenance. Insight into fleet availability and operational readiness.
+Breakdown:Number of breakdowns recorded for the vehicle. Provides insight into vehicle reliability, causes of delivery delays, and need for replacement or repair.
+Maintenance Count / Alert:Tracks how many maintenance events have occurred or when maintenance is due. Insight into fleet health, planning, and reducing unexpected delays.

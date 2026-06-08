@@ -1,0 +1,168 @@
+SWIFTROUTE LOGISTICS DASHBOARD
+Business Requirements
+Dashboard 1: Overview
+KPI’s
+1. Total Orders
+•	Total number of orders for the selected Year and Month
+•	Total orders for the Previous Month
+•	Month-over-Month (MoM) growth / decline % in total orders
+2. On-Time Delivery Rate (%)
+•	On-time delivery percentage for the selected Year and Month
+•	On-time delivery percentage for the Previous Month
+•	MoM change (%) in on-time delivery rate
+3. Customer Satisfaction Score (CSAT %)
+•	Overall CSAT % for the selected Year and Month
+•	CSAT % for the Previous Month
+•	MoM change (%) in customer satisfaction
+4. Average Delivery Time (Hours)
+•	Average delivery time (in hours) for the selected Year and Month
+•	Average delivery time for the Previous Month
+•	MoM change (%) in average delivery duration
+
+
+
+
+
+
+HUB
+1. Total Number of Hubs
+•	Chart Used: KPI Card
+•	Business Use Case:
+Provides quick visibility into the total operational hubs to assess network size and coverage.
+2. Orders Processed vs Hub Capacity
+•	Chart Used: Clustered Column Chart
+•	Business Use Case:
+Helps identify hubs operating above or below capacity, enabling better workload distribution and capacity planning.
+3. Hub Performance Ranking
+•	Chart Used: Bar Chart (Ranked)
+•	Business Use Case:
+Enables comparison of hub efficiency and helps management identify top-performing and underperforming hubs.
+DRIVERS
+1. Number of Drivers
+•	Chart Used: KPI Card
+•	Business Use Case:
+Provides visibility into the total active drivers to support workforce planning and capacity assessment.
+2. Experience vs Rating
+•	Chart Used: Scatter Plot
+•	Business Use Case:
+Analyses the relationship between driver experience and performance rating to identify skill gaps and training needs.
+3. Drivers with Most Delays
+•	Chart Used: Bar Chart
+•	Business Use Case:
+Identifies drivers contributing to the highest number of delays, enabling targeted coaching and performance improvement.
+
+VEHICLES
+1. Number of Vehicles
+•	Chart Used: KPI Card
+•	Business Use Case:
+Displays the total fleet size to support high-level fleet capacity and planning decisions.
+2. Active Vehicles
+•	Chart Used: Donut
+•	Business Use Case:
+Shows the number of vehicles currently active to monitor fleet availability and operational readiness.
+3. Total Orders by Vehicle Model
+•	Chart Used: Bar Chart
+•	Business Use Case:
+Compares order volumes handled by different vehicle models to identify high-utilization vehicles and optimize fleet usage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dashboard 2: Hubs Overview
+
+1. Total Number of Hubs
+•	Chart Used: KPI Card
+•	Business Use Case:
+Provides quick visibility into the total operational hubs to assess network size and coverage.
+2. Orders Processed vs Hub Capacity
+•	Chart Used: Clustered Column Chart
+•	Business Use Case:
+Helps identify hubs operating above or below capacity, enabling better workload distribution and capacity planning.
+3. Hub Performance Ranking
+•	Chart Used: Bar Chart (Ranked)
+•	Business Use Case:
+Enables comparison of hub efficiency and helps management identify top-performing and underperforming hubs.
+4. Hub Order Processing Time (Hours)
+•	Chart Used: Matrix Chart
+•	Business Use Case:
+Shows how many hours each hub takes to process orders on daily basis, helping identify slow-performing hubs and improve turnaround time.
+
+
+
+
+
+
+
+
+
+
+Dashboard 2: Drivers Overview
+1. Number of Drivers
+•	Chart Used: KPI Card
+•	Business Use Case:
+Provides visibility into the total active drivers to support workforce planning and capacity assessment.
+2. Experience vs Rating
+•	Chart Used: Scatter Plot
+•	Business Use Case:
+Analyses the relationship between driver experience and performance rating to identify skill gaps and training needs.
+3. Drivers with Most Delays
+•	Chart Used: Bar Chart
+•	Business Use Case:
+Identifies drivers contributing to the highest number of delays, enabling targeted coaching and performance improvement.
+4. Driver Profile Summary (Based on Driver Name)
+•	Details Shown:
+o	Hire Date
+o	Year of Experience (YOE)
+o	Star Rating
+o	Deliveries made for the selected Month
+•	Chart Used: KPI card
+•	Business Use Case:
+Provides a consolidated view of individual driver performance and experience for evaluation and decision-making.
+5. Monthly Trend of Orders
+•	Chart Used: Line Chart
+•	Business Use Case:
+Displays month-wise delivery trends to analyze driver workload patterns and seasonal demand impact.
+
+
+
+Dashboard 2: Vehicle Overview
+1. Number of Vehicles
+•	Chart Used: KPI Card
+•	Business Use Case:
+Displays the total fleet size to support high-level fleet capacity and planning decisions.
+2. Active Vehicles
+•	Chart Used: Donut
+•	Business Use Case:
+Shows the number of vehicles currently active to monitor fleet availability and operational readiness.
+3. Total Orders by Vehicle Model
+•	Chart Used: Bar Chart
+•	Business Use Case:
+Compares order volumes handled by different vehicle models to identify high-utilization vehicles and optimize fleet usage.
+1. Vehicle Age vs Breakdown
+•	Chart Used: Scatter Chart
+•	Business Use Case:
+Analyzes the relationship between vehicle age and number of breakdowns to identify aging vehicles with higher maintenance risk.
+2. Breakdown by Vehicle Code
+•	Chart Used: Bar Chart
+•	Business Use Case:
+Identifies specific vehicles with frequent breakdowns to support targeted maintenance actions.
+3. Breakdown by Vehicle Model
+•	Chart Used: Bar Chart
+•	Business Use Case:
+Compares breakdown frequency across vehicle models to evaluate model reliability.
+4. Orders by Vehicle Type
+•	Chart Used: Donut Chart
+•	Business Use Case:
+Shows distribution of orders across vehicle types to understand fleet utilization patterns.

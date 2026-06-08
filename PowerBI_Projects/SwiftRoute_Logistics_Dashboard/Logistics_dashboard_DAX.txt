@@ -1,0 +1,77 @@
+Table 1 : Date Table
+1)Day = format('Date Table'[Date], "ddd")
+
+2)Day No = WEEKDAY('Date Table'[Date],2)
+
+3)Month = FORMAT('Date Table'[Date],"mmmm")
+
+4)Month Abr = FORMAT('Date Table'[Date],"mmm")
+
+5)Month No = MONTH('Date Table'[Date])
+
+6)Year = year('Date Table'[Date])
+
+
+Table 2 : Drivers
+1)Driver Name Title = "Driver Name: " & SELECTEDVALUE(Drivers[DriverName])
+
+2)Drivers Title = SELECTEDVALUE(Drivers[DriverName])& " made " & [Total Orders] &
+" Deliveries in " & SELECTEDVALUE('Date Table'[Month]) &" " & SELECTEDVALUE('Date Table'[Year])
+
+3)Hire Date Title = "Hire Date: " & SELECTEDVALUE(Drivers[Hire Date])
+
+4)No of Drivers = "No of Drivers: " & COUNT(Drivers[DriverID])
+
+5)Star Rating = 
+
+ rept(UNICHAR(9733),AVERAGE(Drivers[Performance Rating]))
+ &
+ REPT(unichar(9734), 5- AVERAGE(Drivers[Performance Rating]))
+
+6)YOE = "YOE: " & SELECTEDVALUE(Drivers[Experience Years]) & " Years" 
+
+Table 3 : Hubs
+1)No of Hubs = "No of Hubs: " & COUNT(Hubs[Hub ID])
+
+Table 4 : Orders
+1)Avg Delivery Time(Hrs) = AVERAGE(Orders[Delivery Time Hours] )
+
+2)CSAT % = [CSAT Satisfied Orders] / [Total Orders]
+
+3)CSAT Satisfied Orders = CALCULATE([Total Orders], Orders[Customer Satisfaction Score] >=4)
+
+4)Delayed Delivery Rate = [Delayed orders]/[Delivered Orders]
+
+5)Delayed orders = CALCULATE([Total Orders],Orders[Order Status] = "Delivered",Orders[Is On Time] = FALSE()) 
+
+6)Delivered Orders = CALCULATE([Total Orders], Orders[Order Status] = "Delivered")
+
+7)MoM Avg Delivery % = DIVIDE([Avg Delivery Time(Hrs)]-[PM Avg Delivery Time],[PM Avg Delivery Time])
+
+8)MoM CSAT % = DIVIDE([CSAT %]-[PM CSAT],[PM CSAT])
+
+9)MoM On Time Delivery % = DIVIDE([On Time Delivery Rate]-[PM On Time Delivery Rate],[PM On Time Delivery Rate])
+
+10)MoM Orders % = DIVIDE([Total Orders]-[PM Orders],[PM Orders])
+
+11)On Time Delivered Orders = CALCULATE([Total Orders],Orders[Order Status] = "Delivered",Orders[Is On Time] = True())
+
+12)On Time Delivery Rate = [On Time Delivered Orders] / [Delivered Orders]
+
+13)PM Avg Delivery Time = CALCULATE([Avg Delivery Time(Hrs)], DATEADD('Date Table'[Date],-1,MONTH)) 
+
+14)PM CSAT = CALCULATE([CSAT %], DATEADD('Date Table'[Date],-1,MONTH))
+
+15)PM On Time Delivery Rate = CALCULATE([On Time Delivery Rate], DATEADD('Date Table'[Date],-1,MONTH))
+
+16)PM Orders = CALCULATE([Total Orders], DATEADD('Date Table'[Date],-1,MONTH))
+
+17)Total Orders = COUNT(Orders[Order ID]) 
+
+18)Year Month Title = SELECTEDVALUE('Date Table'[Month]) & " " & SELECTEDVALUE('Date Table'[Year])
+
+
+Table 4: Vehicles
+1)No of Vehicles = "No of Vehicles: " & count(Vehicles[Vehicle ID])
+
+2)Vehicle Age = DATEDIFF(Vehicles[Purchase Date],TODAY(),YEAR) 
