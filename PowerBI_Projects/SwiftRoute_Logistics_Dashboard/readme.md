@@ -133,7 +133,7 @@ All KPI calculations were validated using Excel Pivot Tables to ensure accuracy.
 
 ## Dashboard 2: Hubs Overview
 
-![Hubs Overview](Hubs%20overview.png)
+![Hubs Overview](hubs_overview.png)
 
 ### Insights
 
@@ -153,7 +153,7 @@ All KPI calculations were validated using Excel Pivot Tables to ensure accuracy.
 
 ## Dashboard 3: Drivers Overview
 
-![Drivers Overview](Drivers%20Overview.png)
+![Drivers Overview](drivers_overview.png)
 
 ### Insights
 
@@ -174,7 +174,7 @@ All KPI calculations were validated using Excel Pivot Tables to ensure accuracy.
 
 ## Dashboard 4: Vehicles Overview
 
-![Vehicles Overview](Vehicles%20Overview.png)
+![Vehicles Overview](vehicles_Overview.png)
 
 ### Insights
 
