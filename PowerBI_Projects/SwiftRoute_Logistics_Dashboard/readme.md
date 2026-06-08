@@ -101,7 +101,7 @@ All KPI calculations were validated using Excel Pivot Tables to ensure accuracy.
 
 ## Dashboard 1: Executive Overview
 
-![Executive Dashboard](Swiftroute%20Logistics%20Dashboard.png)
+![Executive Dashboard](dashboard_overview.png)
 
 ### KPIs
 
