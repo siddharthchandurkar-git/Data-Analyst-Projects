@@ -6,7 +6,7 @@ A modern data warehouse built in **SQL Server**, following the **Medallion Archi
 
 ## 📐 Data Architecture
 
-![Data Architecture](docs/data%20architecture.png)
+![Data Architecture](docs/data_architecture.png)
 
 The warehouse is built using SQL Server across three layers:
 
@@ -24,7 +24,7 @@ Consumption layer: **BI & Reporting**, **Ad-hoc Analysis**, and **Machine Learni
 
 ## 🔄 Data Flow
 
-![Data Flow](docs/data%20flow.png)
+![Data Flow](docs/data_flow.png)
 
 Data flows from source CSVs through each layer, one-to-one at the table level in Bronze/Silver, and is then combined into fact/dimension objects in Gold:
 
@@ -36,7 +36,7 @@ Data flows from source CSVs through each layer, one-to-one at the table level in
 
 ## 🔗 Data Integration
 
-![Data Integration](docs/data%20integeration.png)
+![Data Integration](docs/data_integeration.png)
 
 Before modeling, the relationships between CRM and ERP tables were mapped by tracing shared keys:
 
