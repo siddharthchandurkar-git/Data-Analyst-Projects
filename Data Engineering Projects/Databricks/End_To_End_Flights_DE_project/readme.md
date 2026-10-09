@@ -468,5 +468,5 @@ Every layer was tested by running it multiple times with the same and new data.
 
 ## Author
 
-**[Your Name]** | [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
+**Siddharth Chandurkar** | [LinkedIn](https://www.linkedin.com/) | [GitHub](https://github.com/)
 Feel free to open an issue or connect if you have questions about the project.
